@@ -1,4 +1,3 @@
-import React from "react";
 import { DataWeather } from "../interface/data";
 
 const parsingData = (data: any): DataWeather => {
