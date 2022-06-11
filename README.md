@@ -1,12 +1,22 @@
 # Before trying to run the app
 
-To use this project, you'll need to get an API key on the following link https://www.weatherapi.com/
+To use this project, you'll need to get an API key with the following link https://www.weatherapi.com/
 
 Then, create a new file at the root of the project named: .env
 
-In the .env file put your API key like this: REACT_APP_APIKEYW="yourApiKey"
+In the .env file put your API key like this:
 
-Make jure to anable your location.
+```python
+REACT_APP_APIKEYW="yourApiKey"
+```
+
+Then run
+
+```bash
+npm run setup
+```
+
+Make sure to anable your location on your browser.
 
 # Getting Started with Create React App
 
