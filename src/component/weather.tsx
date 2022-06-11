@@ -27,7 +27,7 @@ const WeatherVue = (data: DataWeather): JSX.Element => {
             <input type="checkbox" className="appearance-none peer"></input>
             <span
               onClick={() => setScale(!scale)}
-              className="w-16 h-10 flex items-center flex-shrink-0 ml-4 p-1 bg-cyan-300 rounded-full duration-300 ease-in-out peer-checked:bg-blue-400 after:w-8 after:h-8 after:bg-white after:rounded-full after:shadow-md after:duration-300 peer-checked:after:translate-x-6"
+              className="cursor-pointer w-16 h-10 flex items-center flex-shrink-0 ml-4 p-1 bg-cyan-300 rounded-full duration-300 ease-in-out peer-checked:bg-blue-400 after:w-8 after:h-8 after:bg-white after:rounded-full after:shadow-md after:duration-300 peer-checked:after:translate-x-6"
             ></span>
           </label>
           <p>F</p>
