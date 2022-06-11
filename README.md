@@ -10,7 +10,13 @@ In the .env file put your API key like this:
 REACT_APP_APIKEYW="yourApiKey"
 ```
 
-Make jure to anable your location.
+Then run
+
+```bash
+npm run setup
+```
+
+Make sure to anable your location on your browser.
 
 # Getting Started with Create React App
 
