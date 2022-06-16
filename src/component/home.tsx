@@ -70,6 +70,8 @@ const Home = () => {
             date={dataWeather.date}
             tempC={dataWeather.tempC}
             tempF={dataWeather.tempF}
+            wind={dataWeather.wind}
+            humidity={dataWeather.humidity}
           />
         )}
       </div>

@@ -2,9 +2,12 @@ import React, { useState } from "react";
 import { DataWeather } from "../interface/data";
 import { ReactComponent as WEATHER_ICONS_COLD } from "../SVG/WEATHER_ICONS_COLD.svg";
 import { ReactComponent as WEATHER_ICONS_SUNNY } from "../SVG/WEATHER_ICONS_SUNNY.svg";
+import { ReactComponent as WEATHER_ICONS_WIND } from "../SVG/WEATHER_ICONS_WIND.svg";
+import { ReactComponent as WEATHER_ICONS_HUMIDITY } from "../SVG/WEATHER_ICONS_HUMIDITY.svg";
 
 const WeatherVue = (data: DataWeather): JSX.Element => {
   const [scale, setScale] = useState(true);
+  console.log(data);
 
   return (
     <div className="flex flex-col pl-12 pr-12">
@@ -15,6 +18,14 @@ const WeatherVue = (data: DataWeather): JSX.Element => {
           {" "}
           {data.region} {data.country}
         </p>
+        <div className="flex items-center justify-center">
+          <WEATHER_ICONS_WIND />
+          <p className=" text-3xl font-extrabold">{data.wind + " km/h"}</p>
+        </div>
+        <div className="flex items-center justify-center">
+          <WEATHER_ICONS_HUMIDITY />
+          <p className=" text-3xl font-extrabold">{data.humidity + " %"}</p>
+        </div>
         <div className="flex items-center justify-center">
           {data.tempC < 15 ? <WEATHER_ICONS_COLD /> : <WEATHER_ICONS_SUNNY />}
           <p className=" text-3xl font-extrabold">

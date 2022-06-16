@@ -8,4 +8,6 @@ export interface DataWeather {
   date: string;
   tempC: number;
   tempF: number;
+  wind: number;
+  humidity: number;
 }
